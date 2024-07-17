@@ -3,34 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>David's Portfolio</title>
+  <link rel="icon" href="https://media.licdn.com/dms/image/D5635AQHL4keHfoyOAQ/profile-framedphoto-shrink_400_400/0/1716128467515?e=1721743200&v=beta&t=B_c-RYCQgMhVISJapVJ46nIEIYbm46pdHfYLTb6vXhQ" type="image/x-icon">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
-  <link rel="stylesheet" href="style.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Englebert&family=Micro+5+Charted&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
+  <div>
   <video id="background-video" autoplay loop muted poster="images/new-background.png">
     <source src="images/background-video.mp4" type="video/mp4">
   </video>
-  <div class="container">
-  <img src="images/headshot 1.jpg" class="img-circle" alt="my beautiful face">
 
   <div class="container">
 
-    <div class="card"><h1> David Hopkinson</h1>
-      <h2> Full stack developer</h12>
+
+
+  <div class="card-bio">
+    <h1>David Hopkinson</h1>
+    <div class="card-content">
+    <img src="images/headshot 1.jpg" class="avatar" alt="profile picture">
+
+    <div class="card-bio-info">
+      <p>Full Stack Web Developer|| Ruby | Ruby on Rails | SQL | HTML | CSS | JavaScript | Vue.JS | REACT | GIT | Heroku | Figma |</p>
+      <p><a href="https://www.linkedin.com/in/david-hopkinson-58800449/"target = "_blank" > <i class="fa-brands fa-linkedin"></i> </a>
+         <a href="https://github.com/dhopkins0n/" target = "_blank"><i class="fa-brands fa-gitlab"></i> </a></p>
+    </div>
+  </div>
+  </div>
+
+  <div class="card-about">
+      <h1>About Me</h1>
+
+      <p><i class="fa-solid fa-code"></i>   Full-stack developer with a background in project management and charity work.</p>
+      <p><img src="images/lewagon.png" class="icon"> Recent graduate from a Le Wagon Intensive Web Development Bootcamp</p>
+      <p> <img src="images/ruby.png" class="icon"> Specialise in Ruby and Ruby on Rails.</p>
+      <p><i class="fa-solid fa-user-plus"></i><a href="images/David-Hopkinson_CV.pdf"download="David-Hopkinson_CV.pdf">Download my full CV here</a></p>
+
+  </div>
+
+
+  <div class="card-projects">
+    <h1>Projects</h1>
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner ">
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="carousel-description col-6">
+          <H3>Book Your Sport</H3>
+          <p>A mobile first sports booking app with stripe integration</p>
+          <p>Built in Ruby and hosted on Heroku</p>
+          <p>Built in a scrum of three as a two week sprint</p>
+          <p><strong>Rails | Heroku | Stripe | JS | HTML | CSS | Bootstrap</strong></p>
+          <a href="https://book-your-sport-6901111cfa04.herokuapp.com/"target = "_blank" class = "btn custom-btn"> Visit </a>
+          </div>
+        <img class="carousel-image col-6" src="images/book_your_sport_icon_2.png" alt="First slide">
       </div>
-    <div class="card"><p>i like people places and things</p></div>
+      </div>
+      <div class="carousel-item ">
+        <div class="row">
+          <div class="carousel-description col-6">
+           <H3>Dog 4 A Day</H3>
+          <p>A Web first Peer to Peer dog borrowing app built as a one week sprint</p>
+          <p>Built in Ruby and hosted on Heroku</p>
+          <p>Built in a scrum of three as a one week sprint</p>
+          <p><strong>Rails | Heroku | JS | HTML | CSS | Bootstrap</strong></p>
+          <a href="https://dog4aday-2ac3166ea487.herokuapp.com/"target = "_blank"class = "btn custom-btn" > Visit </a>
+      </div>
+        <img class="carousel-image col-6 " src="/images/dog_for_a_day_icon.png" alt="Second slide">
+      </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
 
-    <div class="card"><a> this is a button</a></div>
-    <a href="https://www.linkedin.com/in/david-hopkinson-58800449/"><i class="fa-brands fa-linkedin"></i> </a>
-    <a href="https://github.com/dhopkins0n/"><i class="fa-brands fa-gitlab"></i> </a>
 
   </div>
 
